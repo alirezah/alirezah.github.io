@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="actionsApp">
+  <head>
+    <title>Action Items</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" data-semver="1.1.5" data-require="angular.js@*"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.js" data-semver="0.4.0" data-require="angular-ui@*"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/poc.js"></script>
+    <link rel="stylesheet" href="css/poc.css">
+  </head>
+  <body>
+    <div id="body">
+      <div id="actions" ng-controller="actionsController">
+        <table>
+          <tr>
+            <td>
+              <select id="programList">
+                <option value="all">All Programs</option>
+                <option ng-repeat="action in actions | unique:'program'" value="{{ action.program }}">{{ action.program }}</option>
+              </select>
+              <select id="categoryList">
+                <option value="all">All Categories</option>
+                <option ng-repeat="action in actions | unique:'category'" value="{{ action.category }}">{{ action.category }}</option>
+              </select>
+              <select id="statusList">
+                <option value="all">All Statuses</option>
+                <option ng-repeat="action in actions | unique:'status'" value="{{ action.status }}">{{ action.status }}</option>
+              </select>
+            </td>
+          </tr> 
+          <tr class="row" ng-repeat="action in actions">
+            <td category="{{ action.category }}" program="{{ action.program }}" status="{{ action.status }}">
+              <strong><label style="font-size: large;">{{ action.title }}</label></strong>
+              <div style="float: right;">
+                {{ action.status }}
+              </div>
+              <br/>
+              <em>{{ action.program }} - {{ action.category }}</em>
+              <p>{{ action.description }}</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
