@@ -5,48 +5,48 @@
         "status": "In Progress",
         "program": "PROGRAM 1",
         "title": "TITLE 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam non nisi est."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam non nisi est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam non nisi est."
     },
     {
         "category": "CATEGORY 1",
         "status": "Completed",
         "program": "PROGRAM 2",
         "title": "TITLE 2",
-        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaPurus gravida quis blandit turpis."
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaPurus gravida quis blandit turpis. Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaPurus gravida quis blandit turpis."
     },
     {
         "category": "CATEGORY 2",
         "status": "In Progress",
         "program": "PROGRAM 1",
         "title": "TITLE 3",
-        "description": "Sodales ut etiam sit amet nisl purus in. Purus in massa tempor nec feugiat nisl pretium."
+        "description": "Sodales ut etiam sit amet nisl purus in. Purus in massa tempor nec feugiat nisl pretium. Sodales ut etiam sit amet nisl purus in. Purus in massa tempor nec feugiat nisl pretium."
     },
     {
         "category": "CATEGORY 2",
         "status": "Completed",
         "program": "PROGRAM 2",
         "title": "TITLE 4",
-        "description": "Feugiat nibh sed pulvinar proin gravida hendrerit. Quis auctor elit sed vulputate mi sit."
+        "description": "Feugiat nibh sed pulvinar proin gravida hendrerit. Quis auctor elit sed vulputate mi sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Quis auctor elit sed vulputate mi sit."
     },
     {
         "category": "CATEGORY 3",
         "status": "In Progress",
         "program": "PROGRAM 1",
         "title": "TITLE 5",
-        "description": "Nibh cras pulvinar mattis nunc. Netus et malesuada fames ac turpis egestas sed."
+        "description": "Nibh cras pulvinar mattis nunc. Netus et malesuada fames ac turpis egestas sed. Nibh cras pulvinar mattis nunc. Netus et malesuada fames ac turpis egestas sed."
     },
     {
         "category": "CATEGORY 3",
         "status": "Completed",
         "program": "PROGRAM 2",
         "title": "TITLE 6",
-        "description": "Rutrum quisque non tellus orci ac auctor augue. Pellentesque sit amet porttitor eget dolor."
+        "description": "Rutrum quisque non tellus orci ac auctor augue. Pellentesque sit amet porttitor eget dolor. Rutrum quisque non tellus orci ac auctor augue. Pellentesque sit amet porttitor eget dolor."
     },
     {
         "category": "CATEGORY 4",
         "status": "Not Started",
         "program": "PROGRAM 3",
         "title": "TITLE 7",
-        "description": "Feugiat scelerisque varius morbi enim nunc. Nulla pharetra diam sit amet nisl suscipit."
+        "description": "Feugiat scelerisque varius morbi enim nunc. Nulla pharetra diam sit amet nisl suscipit. Feugiat scelerisque varius morbi enim nunc. Nulla pharetra diam sit amet nisl suscipit."
     }]
 }
