@@ -19,19 +19,19 @@
             <td>
               <select id="programList">
                 <option value="all">All Programs</option>
-                <option ng-repeat="action in actions | unique:'program'" value="{{ action.program }}">{{ action.program }}</option>
+                <option ng-repeat="action in actions | orderBy:'program' | unique:'program'" value="{{ action.program }}">{{ action.program }}</option>
               </select>
               <select id="categoryList">
                 <option value="all">All Categories</option>
-                <option ng-repeat="action in actions | unique:'category'" value="{{ action.category }}">{{ action.category }}</option>
+                <option ng-repeat="action in actions | orderBy:'category' | unique:'category'" value="{{ action.category }}">{{ action.category }}</option>
               </select>
               <select id="statusList">
                 <option value="all">All Statuses</option>
-                <option ng-repeat="action in actions | unique:'status'" value="{{ action.status }}">{{ action.status }}</option>
+                <option ng-repeat="action in actions | orderBy:'status' | unique:'status'" value="{{ action.status }}">{{ action.status }}</option>
               </select>
             </td>
           </tr> 
-          <tr class="row" ng-repeat="action in actions" on-finish-render="ngRepeatFinished">
+          <tr class="row" ng-repeat="action in actions | orderBy:'program'" on-finish-render="ngRepeatFinished">
             <td category="{{ action.category }}" program="{{ action.program }}" status="{{ action.status }}">
               <strong><label style="font-size: large;">{{ action.title }}</label></strong>
               <div style="float: right;">
