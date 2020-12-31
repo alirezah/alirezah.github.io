@@ -18,10 +18,15 @@ tr {
 }
 
 select {
-  padding-right: 10%;
+  padding-right: 5%;
   margin-right: 10px;
   border-style: dotted;
   outline-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
 }
 
 #actions {
