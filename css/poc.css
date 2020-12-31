@@ -29,6 +29,14 @@ a {
   color: brown;
 }
 
+.title {
+  font-size: large;
+}
+
+.status {
+  float: right;
+}
+
 #actions {
   margin: 0 auto;
   display: flex;
