@@ -22,7 +22,7 @@ var myApp = angular.module("actionsApp", ["ui"])
                 $scope.actions = data.actions;
             })
             .error(function(data) {
-                console.log("Error while processing course data!");
+                console.log("Error while processing action data!");
             });
         
         $scope
