@@ -25,13 +25,14 @@ var myApp = angular.module("actionsApp", ["ui"])
                 console.log("Error while processing course data!");
             });
         
-        $scope.$on("ngRepeatFinished", function(ngRepeatFinishedEvent) {
-            $("p").expander({
-                slicePoint: 200,
-                expandText: "(read more)",
-                userCollapseText: "(read less)",
-                expandEffect: "fadeIn",
-                collapseEffect: "fadeOut"
+        $scope
+            .$on("ngRepeatFinished", function(ngRepeatFinishedEvent) {
+                $("p").expander({
+                    slicePoint: 200,
+                    expandText: "(read more)",
+                    userCollapseText: "(read less)",
+                    expandEffect: "fadeIn",
+                    collapseEffect: "fadeOut"
+                });
             });
-        });
     });

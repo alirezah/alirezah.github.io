@@ -46,15 +46,7 @@ $(function() {
         });
     }
 
-    $("#programList").change(function () {
-        applyFilters();
-    });
-
-    $("#categoryList").change(function () {
-        applyFilters();
-    });
-
-    $("#statusList").change(function () {
+    $("select").change(function () {
         applyFilters();
     });
 });
