@@ -2,10 +2,11 @@
 <html ng-app="actionsApp">
   <head>
     <title>Action Items</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" data-semver="1.1.5" data-require="angular.js@*"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.js" data-semver="0.4.0" data-require="angular-ui@*"></script>
-    <script src="js/jquery-1.11.0.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js" data-semver="1.1.5" data-require="angular.js@*"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js" data-semver="0.4.0" data-require="angular-ui@*"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.expander.min.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/poc.js"></script>
     <link rel="stylesheet" href="css/poc.css">
@@ -30,7 +31,7 @@
               </select>
             </td>
           </tr> 
-          <tr class="row" ng-repeat="action in actions">
+          <tr class="row" ng-repeat="action in actions" on-finish-render="ngRepeatFinished">
             <td category="{{ action.category }}" program="{{ action.program }}" status="{{ action.status }}">
               <strong><label style="font-size: large;">{{ action.title }}</label></strong>
               <div style="float: right;">
